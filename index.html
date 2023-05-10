@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <input type="text" placeholder="surname" id="input2">
+  <input type="text" placeholder="name" id="input1">
+  <input type="text" placeholder="middle name" id="input3">
+  <input type="text" placeholder="your age" id="input4">
+  <input type="text" placeholder="phone number" id="input5">
+  <button id="btn" onclick="add()">ADD</button>
+  <br><br><br><br>
+  <input id="inpitsearch" type="text" placeholder="search a name" onkeyup="searchingg()" >
+  <button onclick="searchingg()">SEarch</button>
+  <button onclick="filteringg()">Filtering</button>
+  <div id="searchitem"></div>
+  <br><br><br><br>
+
+<table border="1" style="border-collapse: collapse; width: 700px; border: 2px solid #342312;">
+  <thead>
+     <tr>
+      <td>T/R</td>
+      <td>SURNAME</td>
+      <td>NAME</td>
+      <td>MIDDLE NAME</td>
+      <td>AGE</td>
+      <td>PHONE NUMBER</td>
+      <td>ACTION</td>
+     </tr>
+  </thead>
+  <tbody id="todo">
+
+  </tbody>
+</table>
+
+  <script src="./main.js"></script>
+</body>
+</html>
